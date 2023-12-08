@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+li, a, ul{
+    text-decoration: none;
+}
+.background-image{
+    background-image: url('background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 15rem;
+    position: relative;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+}
+/* centerinng every content on the page  */
+.container{
+    margin: 2rem auto;
+    width: 90%;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 8rem;
+    left: 1.2rem;
+}
+/* modifying the width or size of the star icon */
+.icon img{
+    max-width: 2rem;
+}
+/* flexing the header */
+header{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+/* styling the header or the title*/
+.title h1{
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+.answer{
+    display: none;
+    color: hsl(292, 16%, 49%);
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.question h2{
+    font-size: 1.3rem;
+    color:hsl(292, 42%, 14%) ;
+    margin-bottom: 1rem;
+}
+
+.answertrigger-btn{
+    display: flex;
+}
+.hide-answer{
+    display: none;
+    
+}
+.show-answer, .hide-answer{
+    cursor: pointer;
+}
+
+@media (min-width:1107px) {
+    .container{
+        max-width: 40%;
+        left: 25rem;
+    }
+}
